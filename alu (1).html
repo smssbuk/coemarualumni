@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alumni Reunion Class of 2020 — Zamfara State College of Education, Maru</title>
+  <meta name="description" content="Alumni Reunion for the 2020 graduates of Zamfara State College of Education — Maru. Reconnect, reminisce, celebrate." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Inline Styles -->
+  <style>
+    :root{
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --accent-2: #065f46;
+      --glass: rgba(255,255,255,0.6);
+      --shadow: 0 8px 24px rgba(11,15,24,0.06);
+      --radius: 12px;
+      --maxwidth: 1100px;
+      --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:var(--sans);background:linear-gradient(180deg,#f8fafc 0%,var(--bg) 100%);color:#0f172a;line-height:1.5;}
+    .container{width:94%;max-width:var(--maxwidth);margin:0 auto;padding:3rem 0}
+    .site-header{background:rgba(255,255,255,0.75);backdrop-filter:blur(6px);border-bottom:1px solid #e6edf3;position:sticky;top:0;z-index:60}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:0.8rem 0}
+    .brand{display:flex;gap:0.9rem;align-items:center}
+    .brand-logo{width:64px;height:64px;border-radius:8px;object-fit:cover}
+    .brand h1{font-size:1.05rem;margin:0}
+    .brand .tagline{color:var(--muted);font-size:0.85rem;margin-top:4px}
+    .nav a{margin-left:1.05rem;color:#0f172a;text-decoration:none;font-weight:600}
+    .nav a.btn{margin-left:1.25rem}
+    .btn{display:inline-flex;align-items:center;gap:0.6rem;padding:0.65rem 1rem;border-radius:8px;border:0;cursor:pointer;font-weight:600;text-decoration:none}
+    .btn-primary{background:var(--accent);color:white;box-shadow:0 6px 18px rgba(15,118,110,0.12)}
+    .btn-ghost{background:transparent;border:1px solid #dbe7e6;color:var(--accent-2)}
+    .btn-outline{background:transparent;border:2px dashed rgba(15,118,110,0.1);color:var(--accent-2)}
+    .btn:active{transform:translateY(1px)}
+    .hero{padding:3.2rem 0}
+    .hero-grid{display:grid;grid-template-columns:1fr 380px;gap:2rem;align-items:stretch}
+    .hero-left h2{font-size:2rem;margin:0 0 0.5rem;color:var(--accent-2)}
+    .lead{color:var(--muted);font-size:1.05rem;margin-bottom:1rem}
+    .hero-meta{display:flex;gap:1rem;margin:1.05rem 0}
+    .hero-meta > div{background:var(--card);padding:0.6rem 0.9rem;border-radius:10px;box-shadow:var(--shadow);text-align:center;min-width:100px}
+    .hero-meta strong{display:block;font-size:1.1rem;color:var(--accent-2)}
+    .small-note{color:var(--muted);font-size:0.9rem;margin-top:0.6rem}
+    .card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .highlight-card img{width:100%;height:150px;object-fit:cover}
+    .card-body{padding:1rem}
+    .section{padding:3.5rem 0}
+    .section h2{margin-top:0;color:var(--accent-2)}
+    .alt-bg{background:#ffffff}
+    .cards-row{display:flex;gap:1rem;margin-top:1rem}
+    .info-card{flex:1;background:var(--card);padding:1rem;border-radius:12px;box-shadow:var(--shadow)}
+    .info-card h4{margin:0 0 0.5rem}
+    .schedule{display:grid;gap:0.75rem;margin-top:1rem}
+    .schedule-item{display:flex;gap:1rem;align-items:flex-start;background:linear-gradient(180deg,#fff,#fbfeff);padding:0.9rem;border-radius:10px;box-shadow:var(--shadow)}
+    .schedule-item time{min-width:130px;font-weight:700;color:var(--accent)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.6rem;margin-top:1rem}
+    .gallery-item{overflow:hidden;border-radius:10px;cursor:pointer}
+    .gallery-item img{width:100%;height:160px;object-fit:cover;transition:transform .35s ease}
+    .gallery-item:hover img{transform:scale(1.06)}
+    .rsvp-grid{display:grid;grid-template-columns:1fr 320px;gap:1.2rem}
+    .rsvp-form{background:var(--card);padding:1rem;border-radius:12px;box-shadow:var(--shadow)}
+    .form-row{margin-bottom:0.8rem;display:flex;flex-direction:column}
+    .form-row.inline{flex-direction:row;align-items:center;gap:1rem}
+    .form-row label{font-weight:600;margin-bottom:0.4rem}
+    .form-row input,.form-row textarea,.form-row select{padding:0.6rem;border-radius:8px;border:1px solid #e8eef0;font-size:0.95rem}
+    .radio-group{display:flex;gap:1rem}
+    .sidebox{background:linear-gradient(180deg,#f9fffdf0,#ffffff);padding:1rem;border-radius:12px;box-shadow:var(--shadow)}
+    .attendee-list{list-style:none;padding:0;margin:0;max-height:260px;overflow:auto}
+    .attendee-list li{padding:0.45rem 0;border-bottom:1px dashed #eef3f4;font-size:0.95rem}
+    .location-grid{display:grid;grid-template-columns:1fr 320px;gap:1rem;align-items:start}
+    .map iframe{width:100%;height:320px;border:0;border-radius:10px}
+    .contact a{color:var(--accent)}
+    .invite-card{background:linear-gradient(180deg,#fff,#fbfffd);padding:1.2rem;border-radius:12px;box-shadow:var(--shadow);text-align:center}
+    .invite-actions{margin-top:1rem;display:flex;gap:0.6rem;justify-content:center;flex-wrap:wrap}
+    .invite-datetime{font-weight:700;color:var(--accent-2)}
+    .site-footer{padding:1.4rem 0;border-top:1px solid #e6edf3;background:transparent}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center}
+    .small{font-size:0.9rem}
+    .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(6,10,12,0.65);z-index:200}
+    .lightbox img{max-width:92%;max-height:85%;border-radius:8px;box-shadow:0 18px 60px rgba(2,6,23,0.7)}
+    .lb-close{position:fixed;right:22px;top:22px;background:transparent;color:white;border:0;font-size:28px;cursor:pointer}
+    @media (max-width:900px){
+      .header-inner{flex-direction:column;gap:0.5rem;align-items:flex-start}
+      .nav{display:flex;gap:0.6rem;flex-wrap:wrap}
+      .hero-grid{grid-template-columns:1fr}
+      .rsvp-grid{grid-template-columns:1fr}
+      .location-grid{grid-template-columns:1fr}
+      .cards-row{flex-direction:column}
+      .footer-inner{flex-direction:column;gap:0.6rem;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="College Logo" class="brand-logo">
+        <div>
+          <h1><b>Zamfara State College Of Education, Maru</b></h1>
+          <div class="tagline">Alumni Reunion Class of 2020</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#gallery">Gallery</a>
+       
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= Hero ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h2>🎓 Welcome Back, Class of 2020!</h2>
+        <p class="lead">Join us for an unforgettable reunion at Zamfara State College of Education, Maru — reconnect, reminisce, and celebrate our shared journey.</p>
+        <div class="hero-meta">
+          <div><strong id="countdown-days">0</strong>Days</div>
+          <div><strong id="countdown-hours">0</strong>Hours</div>
+          <div><strong id="countdown-minutes">0</strong>Mins</div>
+          <div><strong id="countdown-seconds">0</strong>Secs</div>
+        </div>
+        <a href="https://tinyurl.com/COEMARU2020ALUMNI" class="btn btn-primary">Click Here to Register</a>
+        <p class="small-note">📍 College Campus, Maru • March 28, 2026</p>
+      </div>
+      <div class="card highlight-card">
+        <img src="img2.jpg" alt="Graduates celebrating">
+        <div class="card-body">
+          <h3>Reconnect • Remember • Rejoice</h3>
+          <p>Let’s celebrate our journey and create new memories together!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= About ================= -->
+  <section id="about" class="section alt-bg">
+    <div class="container">
+      <h2>About the Reunion</h2>
+      <p>The 2019/2020 alumni of Zamfara State College of Education, Maru, are gathering to celebrate friendships, achievements, and milestones. This event is more than just a reunion — it’s a renewal of our bonds and a chance to build lasting connections for the future.</p>
+      <div class="cards-row">
+        <div class="info-card">
+          <h4>📅 When</h4>
+          <p>Saturday, 28th March 2026 — 10:00 AM</p>
+        </div>
+        <div class="info-card">
+          <h4>📍 Where</h4>
+          <p>Zamfara State College of Education, Maru</p>
+        </div>
+        <div class="info-card">
+          <h4>🎉 Activities</h4>
+          <p>Games, speeches, awards, networking, photo sessions, and more!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Schedule ================= -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <h2>Event Schedule</h2>
+      <div class="schedule">
+        <div class="schedule-item"><time>10:00 AM</time><div>Arrival & Registration</div></div>
+        <div class="schedule-item"><time>11:00 AM</time><div>Welcome Speech & Keynote</div></div>
+        <div class="schedule-item"><time>12:00 PM</time><div>Lunch Break & Networking</div></div>
+        <div class="schedule-item"><time>02:00 PM</time><div>Games & Entertainment</div></div>
+        <div class="schedule-item"><time>03:00 PM</time><div>Awards & Closing Ceremony</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Gallery ================= -->
+  <section id="gallery" class="section alt-bg">
+    <div class="container">
+      <h2>Memories Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="1.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="4.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="2.jpg" alt="Friends"></div>
+        <div class="gallery-item"><img src="3.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="5.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="6.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="7.jpg" alt="Friends"></div>
+        <div class="gallery-item"><img src="8.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="9.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="10.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="11.jpg" alt="Friends"></div>
+        <div class="gallery-item"><img src="12.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="13.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="14.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="15.png" alt="Friends"></div>
+        <div class="gallery-item"><img src="16.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="17.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="18.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="19.jpg" alt="Friends"></div>
+        <div class="gallery-item"><img src="20.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="21.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="22.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="23.jpg" alt="Friends"></div>
+        <div class="gallery-item"><img src="24.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="25.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="26.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="27.jpg" alt="Friends"></div>
+        <div class="gallery-item"><img src="28.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="29.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="30.jpg" alt="Graduates"></div>
+		 <div class="gallery-item"><img src="31.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="34.jpg" alt="Graduates"></div>
+        <div class="gallery-item"><img src="32.jpg" alt="Friends"></div>
+        <div class="gallery-item"><img src="33.jpg" alt="Ceremony"></div>
+		 <div class="gallery-item"><img src="35.jpg" alt="Campus"></div>
+        <div class="gallery-item"><img src="36.jpg" alt="Graduates"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RSVP ================= -->
+  <section id="rsvp" class="section">
+    <div class="container">
+      <h2>RSVP Now</h2>
+      <div class="rsvp-grid">
+        <form id="rsvp-form" class="rsvp-form">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone">
+          </div>
+          <div class="form-row inline">
+            <label>Will you attend?</label>
+            <div class="radio-group">
+              <label><input type="radio" name="attend" value="yes" checked> Yes</label>
+              <label><input type="radio" name="attend" value="no"> No</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="message">Message (optional)</label>
+            <textarea id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit RSVP</button>
+        </form>
+        <div class="sidebox">
+          <h3>Attending Alumni</h3>
+          <ul id="attendee-list" class="attendee-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Location ================= -->
+  <section class="section alt-bg">
+    <div class="container location-grid">
+      <div>
+        <h2>Venue</h2>
+        <p>Main Hall, Zamfara State College of Education, Maru</p>
+        <p class="contact">Need help? 📞 <a href="tel:+2347032038258">+234 7032038258</a></p>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps?q=Zamfara+State+College+of+Education+Maru&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Invitation ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="invite-card">
+        <h2>You're Invited!</h2>
+        <p class="invite-datetime">📅 Saturday, March 28, 2026 — 10:00 AM</p>
+        <p>📍 Zamfara State College of Education, Maru</p>
+        <div class="invite-actions">
+          <a href="#rsvp" class="btn btn-primary">RSVP Now</a>
+          <button id="download-ics" class="btn btn-ghost">📥 Add to Calendar</button>
+          <button id="print-invite" class="btn btn-outline">🖨️ Print Invite</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Sufiyanu Alh Sani - S.A on Information Systems - ZSCOE Maru SUG 2020</div>
+      <div class="small">Designed with ❤️</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lb-close" class="lb-close" aria-label="Close">✕</button>
+    <img id="lb-image" alt="Expanded gallery image">
+  </div>
+
+  <!-- Inline Script -->
+  <script>
+    const EVENT_DATE_ISO = "2026-03-28T10:00:00+01:00"; 
+    const EVENT_TITLE = "Alumni Reunion — Zamfara State College Of Education, Maru";
+    const EVENT_LOCATION = "Zamfara State College Of Education, Maru";
+    const $ = sel => document.querySelector(sel);
+    const $$ = sel => Array.from(document.querySelectorAll(sel));
+
+    // Countdown
+    function initCountdown(isoString){
+      const date = new Date(isoString).getTime();
+      const d=$('#countdown-days'),h=$('#countdown-hours'),m=$('#countdown-minutes'),s=$('#countdown-seconds');
+      setInterval(()=>{
+        const now=new Date().getTime();let dist=date-now;
+        if(dist<0){d.textContent=h.textContent=m.textContent=s.textContent='0';return;}
+        d.textContent=Math.floor(dist/(1000*60*60*24));
+        h.textContent=Math.floor((dist%(1000*60*60*24))/(1000*60*60));
+        m.textContent=Math.floor((dist%(1000*60*60))/(1000*60));
+        s.textContent=Math.floor((dist%(1000*60))/1000);
+      },1000);
+    }
+
+    // RSVP
+    function loadRsvps(){return JSON.parse(localStorage.getItem("rsvps")||"[]");}
+    function saveRsvps(list){localStorage.setItem("rsvps",JSON.stringify(list));}
+    function renderAttendeeList(){
+      const list=loadRsvps().filter(r=>r.attend==="yes");
+      const ul=$("#attendee-list");ul.innerHTML=list.map(r=>`<li>${escapeHtml(r.name)}</li>`).join("");
+    }
+    function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+    function initRsvpForm(){
+      $("#rsvp-form").addEventListener("submit",e=>{
+        e.preventDefault();
+        const data={name:$("#name").value.trim(),email:$("#email").value.trim(),phone:$("#phone").value.trim(),
+        attend:document.querySelector("input[name=attend]:checked").value,message:$("#message").value.trim()};
+        if(!data.name||!data.email){alert("Please fill required fields");return;}
+        const list=loadRsvps();list.push(data);saveRsvps(list);renderAttendeeList();e.target.reset();alert("RSVP saved!");
+      });
+    }
+
+    // Gallery lightbox
+    function initGallery(){
+      const lb=$("#lightbox"),img=$("#lb-image"),close=$("#lb-close");
+      $$(".gallery-item img").forEach(el=>{
+        el.addEventListener("click",()=>{img.src=el.src;lb.style.display="flex";lb.setAttribute("aria-hidden","false");});
+      });
+      close.addEventListener("click",()=>{lb.style.display="none";lb.setAttribute("aria-hidden","true");});
+      lb.addEventListener("click",e=>{if(e.target===lb)close.click();});
+    }
+
+    // ICS calendar
+    function generateICS({title,description,location,startISO,durationMinutes}){
+      const start=new Date(startISO),end=new Date(start.getTime()+durationMinutes*60000);
+      function fmt(d){return d.toISOString().replace(/[-:]/g,"").split(".")[0]+"Z";}
+      const ics=`BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nSUMMARY:${title}\nDESCRIPTION:${description}\nLOCATION:${location}\nDTSTART:${fmt(start)}\nDTEND:${fmt(end)}\nEND:VEVENT\nEND:VCALENDAR`;
+      return "data:text/calendar;charset=utf8,"+encodeURIComponent(ics);
+    }
+
+    function initInvitePrint(){ $("#print-invite").addEventListener("click",()=>window.print()); }
+    function setCurrentYear(){ $("#year").textContent=new Date().getFullYear(); }
+
+    document.addEventListener("DOMContentLoaded",()=>{
+      initCountdown(EVENT_DATE_ISO);
+      initRsvpForm();
+      renderAttendeeList();
+      initGallery();
+      initInvitePrint();
+      setCurrentYear();
+      const icsUrl=generateICS({title:EVENT_TITLE,description:"Alumni Reunion for 2019/2020 — Zamfara State College of Education, Maru.",location:EVENT_LOCATION,startISO:EVENT_DATE_ISO,durationMinutes:240});
+      $("#download-ics").addEventListener("click",()=>{const a=document.createElement("a");a.href=icsUrl;a.download="alumni-reunion.ics";document.body.appendChild(a);a.click();a.remove();});
+    });
+  </script>
+</body>
+</html>
